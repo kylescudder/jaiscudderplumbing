@@ -1,0 +1,29 @@
+---
+import { paragraphs } from "../data/paragraphs";
+import { Image } from "astro:assets";
+import vanImage from "../assets/images/vanImage.jpg";
+---
+
+<div class="h-full">
+  <Image
+    src={vanImage}
+    alt="Jai Scudder Plumbing Van"
+    class="h-full w-full rounded-lg object-cover"
+    loading="eager"
+    fetchpriority="low"
+  />
+</div>
+<div class="h-full">
+  <div class="flex h-full flex-col overflow-hidden rounded-lg border shadow-lg">
+    <div class="bg-red-700 p-4 font-semibold text-white">JAI SCUDDER LTD</div>
+    <div class="flex flex-1 flex-col justify-between">
+      {
+        paragraphs.map((paragraph) => (
+          <div class="border-b p-4 last:border-b-0">
+            <p class="text-gray-700">{paragraph.text}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+---
+import { type ContactPoint, contactPoints } from "../data/contact-points";
+---
+
+<div class="container mx-auto px-4 py-8" id="contact">
+  <h1 class="py-6 text-3xl font-light">CONTACT US</h1>
+  <hr class="mb-12 border-gray-800" />
+  <div class="mt-12">
+    <div class="mb-8 text-center">
+      <h5 class="text-xl font-light">
+        Please contact Jai Scudder using one of the methods below:
+      </h5>
+    </div>
+    <div class="gap-8">
+      {/* Contact Points Column */}
+      <div class="text-center">
+        {
+          contactPoints.map((item: ContactPoint) => (
+            <div class="mb-8">
+              <h5 class="text-lg font-light">
+                {item.type}: {item.details}
+              </h5>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
