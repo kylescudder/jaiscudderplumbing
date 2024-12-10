@@ -1,5 +1,6 @@
 ---
 import Navigation from "../components/Navigation.astro";
+import GlobalStyle from "../components/GlobalStyles.astro";
 
 interface Props {
   title?: string;
@@ -20,6 +21,7 @@ const { title = "Jai Scudder - Plumbing and Property Maintenance" } =
       name="description"
       content="Local plumbing and property maintenance services by Jai Scudder Ltd"
     />
+    <GlobalStyle />
     <title>{title}</title>
   </head>
   <body class="h-full min-h-screen w-full bg-white text-black">
