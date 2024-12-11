@@ -1,29 +1,25 @@
 ---
 import Footer from "../components/Footer.astro";
 import Navigation from "../components/Navigation.astro";
-import GlobalStyle from "../components/GlobalStyles.astro";
+import HeadSEO from "../components/HeadSEO.astro";
 
 interface Props {
-  title?: string;
+  title?: string | undefined;
+  description?: string | undefined;
+  ogImage?: URL | undefined;
 }
 
-const { title = "Jai Scudder - Plumbing and Property Maintenance" } =
-  Astro.props;
+const {
+  title = "Jai Scudder - Plumbing and Property Maintenance",
+  description = "A local plumber that places an emphasis on quality and reputation",
+  ogImage = new URL("assets/images/headerLogo.svg", Astro.url),
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en" class="h-full w-full">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content="Local plumbing and property maintenance services by Jai Scudder Ltd"
-    />
-    <GlobalStyle />
-    <title>{title}</title>
+    <HeadSEO title={title} description={description} ogImage={ogImage} />
   </head>
   <body class="h-full min-h-screen w-full bg-white text-black">
     <Navigation />
