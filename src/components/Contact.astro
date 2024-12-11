@@ -7,9 +7,9 @@ import { type ContactPoint, contactPoints } from "../data/contact-points.tsx";
   <hr class="mb-12 border-gray-800" />
   <div class="mt-12">
     <div class="mb-8 text-center">
-      <h5 class="text-xl font-light">
+      <h2 class="font-light">
         Please contact Jai Scudder using one of the methods below:
-      </h5>
+      </h2>
     </div>
     {/* Center the contact points with flex */}
     <div class="flex flex-col items-center justify-center">
@@ -18,7 +18,7 @@ import { type ContactPoint, contactPoints } from "../data/contact-points.tsx";
           const Icon = contact.icon;
           return (
             <div class="mb-8 flex items-center justify-center">
-              <h5 class="flex items-center text-lg font-light">
+              <h3 class="flex items-center">
                 {Icon && <Icon className="h-5 w-5 mr-2" />}
                 <a
                   href={
@@ -30,7 +30,7 @@ import { type ContactPoint, contactPoints } from "../data/contact-points.tsx";
                 >
                   {contact.details}
                 </a>
-              </h5>
+              </h3>
             </div>
           );
         })
