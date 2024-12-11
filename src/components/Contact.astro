@@ -1,5 +1,5 @@
 ---
-import { type ContactPoint, contactPoints } from "../data/contact-points";
+import { type ContactPoint, contactPoints } from "../data/contact-points.tsx";
 ---
 
 <div class="container mx-auto px-4 py-8" id="contact">
@@ -11,19 +11,30 @@ import { type ContactPoint, contactPoints } from "../data/contact-points";
         Please contact Jai Scudder using one of the methods below:
       </h5>
     </div>
-    <div class="gap-8">
-      {/* Contact Points Column */}
-      <div class="text-center">
-        {
-          contactPoints.map((item: ContactPoint) => (
-            <div class="mb-8">
-              <h5 class="text-lg font-light">
-                {item.type}: {item.details}
+    {/* Center the contact points with flex */}
+    <div class="flex flex-col items-center justify-center">
+      {
+        contactPoints.map((contact: ContactPoint) => {
+          const Icon = contact.icon;
+          return (
+            <div class="mb-8 flex items-center justify-center">
+              <h5 class="flex items-center text-lg font-light">
+                {Icon && <Icon className="h-5 w-5 mr-2" />}
+                <a
+                  href={
+                    contact.type === "Email"
+                      ? `mailto:${contact.details}`
+                      : `tel:${contact.details.replace(/\s/g, "")}`
+                  }
+                  class="transition-colors hover:text-red-300"
+                >
+                  {contact.details}
+                </a>
               </h5>
             </div>
-          ))
-        }
-      </div>
+          );
+        })
+      }
     </div>
   </div>
 </div>

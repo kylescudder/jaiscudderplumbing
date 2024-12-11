@@ -18,7 +18,7 @@ const Gallery = ({ galleries }: { galleries: GalleryItem[] }) => {
   };
 
   return (
-    <section className="py-16" id="testimonials">
+    <section className="py-16" id="gallery">
       <div className="container mx-auto px-4">
         <h2 className="mb-12 text-center text-4xl font-bold">Gallery</h2>
         <div className="grid grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3">

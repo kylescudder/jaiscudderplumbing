@@ -1,0 +1,139 @@
+---
+import { services } from "../data/services";
+import { type ContactPoint, contactPoints } from "../data/contact-points.tsx";
+
+const currentYear = new Date().getFullYear();
+const businessName = "Jai Scudder Plumbing & Property Maintenance";
+
+const businessHours = [
+  "Monday - Friday: 8:00 AM - 6:00 PM",
+  "Saturday: 9:00 AM - 4:00 PM",
+  "24/7 Emergency Service Available",
+];
+---
+
+<footer class="bg-red-700 text-gray-100">
+  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <!-- Company Info -->
+      <div class="space-y-4">
+        <h3 class="text-xl font-bold text-white">Contact Us</h3>
+        <div class="space-y-2">
+          {
+            contactPoints.map((contact: ContactPoint) => {
+              const Icon = contact.icon;
+              return (
+                <p class="flex items-center">
+                  {Icon && <Icon className="h-5 w-5 mr-2" />}
+                  <a
+                    href={
+                      contact.type === "Email"
+                        ? `mailto:${contact.details}`
+                        : `tel:${contact.details.replace(/\s/g, "")}`
+                    }
+                    class="transition-colors hover:text-gray-300"
+                  >
+                    {contact.details}
+                  </a>
+                </p>
+              );
+            })
+          }
+          <p class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+              <path
+                d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+              ></path>
+            </svg>
+            <span>Serving East Sussex</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="mb-4 text-xl font-bold text-white">Our Services</h3>
+        <ul class="space-y-2">
+          {services.map((service) => <li>{service.title}</li>)}
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="mb-4 text-xl font-bold text-white">Quick Links</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="#gallery" class="transition-colors hover:text-gray-300">
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a
+              href="#testimonials"
+              class="transition-colors hover:text-gray-300"
+            >
+              Testimonials
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="transition-colors hover:text-gray-300">
+              Contact Us
+            </a>
+          </li>
+          <li>
+            <a href="#services" class="transition-colors hover:text-gray-300">
+              Services
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-8">
+          <h4 class="mb-4 font-semibold">Emergency Service</h4>
+          {
+            contactPoints
+              .filter((contact: ContactPoint) => contact.type === "Mob")
+              .map((contact: ContactPoint) => {
+                const Icon = contact.icon;
+                return (
+                  <span>
+                    <a
+                      href={`tel:${contact.details.replace(/\s/g, "")}`}
+                      class="inline-block rounded-md bg-red-600 px-4 py-2 text-white transition-colors hover:bg-red-700"
+                    >
+                      24/7 Emergency Call
+                    </a>
+                  </span>
+                );
+              })
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="mt-8 border-t border-white pt-8">
+      <div class="flex flex-col items-center justify-between md:flex-row">
+        <p class="text-sm">
+          &copy; {currentYear}
+          {businessName}. All rights reserved.
+        </p>
+        <div class="mt-4 md:mt-0">
+          <p class="text-sm">Licensed & Insured | Family Owned & Operated</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
