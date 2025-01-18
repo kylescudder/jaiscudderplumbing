@@ -19,9 +19,15 @@ const Gallery = ({ galleries }: { galleries: GalleryItem[] }) => {
 
   return (
     <section className="py-16" id="gallery">
-      <div className="container mx-auto px-4">
-        <h2 className="mb-12 text-center text-4xl font-bold">Gallery</h2>
-        <div className="grid grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto">
+        <div className="mb-12 rounded-lg bg-red-700">
+          <div className="container mx-auto px-4">
+            <h2 className="py-6 text-center text-4xl font-bold text-white">
+              Gallery
+            </h2>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
           {galleries.map((gallery, index) => (
             <div
               key={index}
@@ -38,7 +44,6 @@ const Gallery = ({ galleries }: { galleries: GalleryItem[] }) => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                   <h3 className="mb-2 text-xl font-bold">{gallery.name}</h3>
-                  <p className="text-sm">{gallery.description}</p>
                 </div>
               </div>
             </div>

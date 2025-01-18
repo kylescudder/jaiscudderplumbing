@@ -4,33 +4,29 @@ import { services } from "../data/services";
 ---
 
 <section class="py-16" id="services">
-  <div class="container mx-auto px-4">
-    <h2 class="mb-12 text-center text-4xl font-bold">Our Services</h2>
-    <div class="grid gap-8 md:grid-cols-3">
-      {
-        services.map((service) => (
-          <div class="group relative h-96 overflow-hidden rounded-lg shadow-lg">
-            <Image
-              src={service.image}
-              alt={service.title}
-              width={500}
-              height={500}
-              class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-              loading="eager"
-              fetchpriority="low"
-            />
-            <div class="absolute inset-0 flex flex-col justify-end bg-black bg-opacity-50 p-6 text-white transition-opacity duration-300 group-hover:bg-opacity-70">
-              <h3 class="mb-3 text-2xl font-bold">{service.title}</h3>
-              <p class="mb-4 opacity-80">{service.description}</p>
-              <ul class="list-inside list-disc">
-                {service.details.map((detail) => (
-                  <li class="opacity-90">{detail}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))
-      }
+  <div class="mb-12 bg-red-700 rounded-lg">
+    <div class="container mx-auto px-4">
+      <h2 class="py-6 text-center text-4xl font-bold text-white">Services</h2>
     </div>
+  </div>
+  <div class="grid gap-8 md:grid-cols-3">
+    {
+      services.map((service) => (
+        <div class="group relative h-96 overflow-hidden rounded-lg shadow-lg">
+          <Image
+            src={service.image}
+            alt={service.title}
+            width={500}
+            height={500}
+            class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+            loading="eager"
+            fetchpriority="low"
+          />
+          <div class="absolute inset-0 flex flex-col justify-end bg-black bg-opacity-50 p-6 text-white transition-opacity duration-300 group-hover:bg-opacity-70">
+            <h3 class="mb-3 text-2xl font-bold">{service.title}</h3>
+          </div>
+        </div>
+      ))
+    }
   </div>
 </section>
