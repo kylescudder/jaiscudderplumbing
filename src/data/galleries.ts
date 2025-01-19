@@ -16,10 +16,12 @@ import bathroomsimg7 from "../assets/images/gallery/bathrooms/Pic7.jpg";
 import bathroomsimg8 from "../assets/images/gallery/bathrooms/Pic8.jpg";
 import bathroomsimg9 from "../assets/images/gallery/bathrooms/Pic9.jpg";
 import bathroomsimg10 from "../assets/images/gallery/bathrooms/Pic10.jpg";
+import bathroomsimg11 from "../assets/images/gallery/bathrooms/Pic11.jpg";
 import bathroomsimg12 from "../assets/images/gallery/bathrooms/Pic12.jpg";
 import bathroomsimg13 from "../assets/images/gallery/bathrooms/Pic13.jpg";
 import bathroomsimg14 from "../assets/images/gallery/bathrooms/Pic14.jpg";
 import bathroomsimg15 from "../assets/images/gallery/bathrooms/Pic15.jpg";
+import bathroomsimg16 from "../assets/images/gallery/bathrooms/Pic16.jpg";
 import bathroomsimg17 from "../assets/images/gallery/bathrooms/Pic17.jpg";
 import bathroomsimg18 from "../assets/images/gallery/bathrooms/Pic18.jpg";
 import bathroomsimg19 from "../assets/images/gallery/bathrooms/Pic19.jpg";
@@ -29,15 +31,13 @@ import bathroomsimg22 from "../assets/images/gallery/bathrooms/Pic22.jpg";
 import bathroomsimg23 from "../assets/images/gallery/bathrooms/Pic23.jpg";
 import bathroomsimg24 from "../assets/images/gallery/bathrooms/Pic24.jpg";
 import bathroomsimg25 from "../assets/images/gallery/bathrooms/Pic25.jpg";
+import bathroomsimg26 from "../assets/images/gallery/bathrooms/Pic26.jpg";
 import bathroomsimg27 from "../assets/images/gallery/bathrooms/Pic27.jpg";
 import bathroomsimg28 from "../assets/images/gallery/bathrooms/Pic28.jpg";
 import bathroomsimg29 from "../assets/images/gallery/bathrooms/Pic29.jpg";
 import bathroomsimg30 from "../assets/images/gallery/bathrooms/Pic30.jpg";
 import bathroomsimg31 from "../assets/images/gallery/bathrooms/Pic31.jpg";
 import bathroomsimg32 from "../assets/images/gallery/bathrooms/Pic32.jpg";
-import bathroomsimg33 from "../assets/images/gallery/bathrooms/Pic33.jpg";
-import bathroomsimg34 from "../assets/images/gallery/bathrooms/Pic34.jpg";
-import bathroomsimg35 from "../assets/images/gallery/bathrooms/Pic35.jpg";
 
 
 
@@ -81,10 +81,12 @@ export const galleries: GalleryItem[] = [
       bathroomsimg8,
       bathroomsimg9,
       bathroomsimg10,
+      bathroomsimg11,
       bathroomsimg12,
       bathroomsimg13,
       bathroomsimg14,
       bathroomsimg15,
+      bathroomsimg16,
       bathroomsimg17,
       bathroomsimg18,
       bathroomsimg19,
@@ -94,15 +96,13 @@ export const galleries: GalleryItem[] = [
       bathroomsimg23,
       bathroomsimg24,
       bathroomsimg25,
+      bathroomsimg26,
       bathroomsimg27,
       bathroomsimg28,
       bathroomsimg29,
       bathroomsimg30,
       bathroomsimg31,
-      bathroomsimg32,
-      bathroomsimg33,
-      bathroomsimg34,
-      bathroomsimg35,
+      bathroomsimg32
     ],
   },
   {
