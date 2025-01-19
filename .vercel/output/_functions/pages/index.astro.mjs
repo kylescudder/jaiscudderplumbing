@@ -327,715 +327,715 @@ const Gallery = ({ galleries }) => {
   ] }) });
 };
 
-const bathroomsimg1 = new Proxy({"src":"/_astro/Pic1.C13318Df.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg1 = new Proxy({"src":"/_astro/Pic1.C13318Df.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic1.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic1.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg2 = new Proxy({"src":"/_astro/Pic2.CXrgUvyH.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg2 = new Proxy({"src":"/_astro/Pic2.CXrgUvyH.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic2.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic2.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg3 = new Proxy({"src":"/_astro/Pic3.BQyniVPb.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg3 = new Proxy({"src":"/_astro/Pic3.BQyniVPb.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic3.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic3.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg4 = new Proxy({"src":"/_astro/Pic4.DATRrYcL.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg4 = new Proxy({"src":"/_astro/Pic4.DATRrYcL.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic4.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic4.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg5 = new Proxy({"src":"/_astro/Pic5.DEwbUHds.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg5 = new Proxy({"src":"/_astro/Pic5.DEwbUHds.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic5.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic5.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg6 = new Proxy({"src":"/_astro/Pic6.VsW2t6vr.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg6 = new Proxy({"src":"/_astro/Pic6.VsW2t6vr.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic6.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic6.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg7 = new Proxy({"src":"/_astro/Pic7.D9aFXJqN.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg7 = new Proxy({"src":"/_astro/Pic7.D9aFXJqN.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic7.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic7.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg8 = new Proxy({"src":"/_astro/Pic8.C4736BuK.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg8 = new Proxy({"src":"/_astro/Pic8.C4736BuK.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic8.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic8.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg9 = new Proxy({"src":"/_astro/Pic9.63omQd8u.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg9 = new Proxy({"src":"/_astro/Pic9.63omQd8u.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic9.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic9.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg10 = new Proxy({"src":"/_astro/Pic10.CkciLKsP.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg10 = new Proxy({"src":"/_astro/Pic10.CkciLKsP.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic10.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic10.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg12 = new Proxy({"src":"/_astro/Pic12.-uW5SokZ.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg11 = new Proxy({"src":"/_astro/Pic11.-uW5SokZ.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic12.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic11.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg13 = new Proxy({"src":"/_astro/Pic13.BlLPMbAk.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg12 = new Proxy({"src":"/_astro/Pic12.BlLPMbAk.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic13.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic12.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg14 = new Proxy({"src":"/_astro/Pic14.Dysy64NG.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg13 = new Proxy({"src":"/_astro/Pic13.Dysy64NG.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic14.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic13.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg15 = new Proxy({"src":"/_astro/Pic15.BsewAJCZ.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg14 = new Proxy({"src":"/_astro/Pic14.BsewAJCZ.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic15.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic14.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg17 = new Proxy({"src":"/_astro/Pic17.Dn5XtBu4.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg15 = new Proxy({"src":"/_astro/Pic15.Dn5XtBu4.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic17.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic15.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg18 = new Proxy({"src":"/_astro/Pic18.jquz63t9.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg16 = new Proxy({"src":"/_astro/Pic16.jquz63t9.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic18.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic16.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg19 = new Proxy({"src":"/_astro/Pic19.BtfjMU7b.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg17 = new Proxy({"src":"/_astro/Pic17.BtfjMU7b.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic19.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic17.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg20 = new Proxy({"src":"/_astro/Pic20.CQhZ39q-.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg18 = new Proxy({"src":"/_astro/Pic18.CQhZ39q-.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic20.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic18.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg21 = new Proxy({"src":"/_astro/Pic21.CbmmVxMb.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg19 = new Proxy({"src":"/_astro/Pic19.CbmmVxMb.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic21.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic19.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg22 = new Proxy({"src":"/_astro/Pic22.CQ5G9cSF.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg20 = new Proxy({"src":"/_astro/Pic20.CQ5G9cSF.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic22.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic20.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg23 = new Proxy({"src":"/_astro/Pic23.C5Fdk_k3.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg21 = new Proxy({"src":"/_astro/Pic21.C5Fdk_k3.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic23.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic21.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg24 = new Proxy({"src":"/_astro/Pic24.DGjoR7kT.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg22 = new Proxy({"src":"/_astro/Pic22.DGjoR7kT.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic24.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic22.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg25 = new Proxy({"src":"/_astro/Pic25.Ci0YvmwB.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg23 = new Proxy({"src":"/_astro/Pic23.Ci0YvmwB.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic25.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic23.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg27 = new Proxy({"src":"/_astro/Pic27.D0RiugR5.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg24 = new Proxy({"src":"/_astro/Pic24.D0RiugR5.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic27.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic24.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg28 = new Proxy({"src":"/_astro/Pic28.ByUjiLRr.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg25 = new Proxy({"src":"/_astro/Pic25.ByUjiLRr.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic28.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic25.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg29 = new Proxy({"src":"/_astro/Pic29.sTkq9Voj.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg26 = new Proxy({"src":"/_astro/Pic26.sTkq9Voj.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic29.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic26.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg30 = new Proxy({"src":"/_astro/Pic30.DwAG_0dI.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg27 = new Proxy({"src":"/_astro/Pic27.DwAG_0dI.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic30.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic27.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg31 = new Proxy({"src":"/_astro/Pic31.BOgu4UqW.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg28 = new Proxy({"src":"/_astro/Pic28.BOgu4UqW.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic31.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic28.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg32 = new Proxy({"src":"/_astro/Pic32.C6tMcGK5.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg29 = new Proxy({"src":"/_astro/Pic29.C6tMcGK5.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic32.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic29.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg33 = new Proxy({"src":"/_astro/Pic33.B2ADLqBx.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg30 = new Proxy({"src":"/_astro/Pic30.B2ADLqBx.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic33.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic30.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg34 = new Proxy({"src":"/_astro/Pic34.e2c6mDDO.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg31 = new Proxy({"src":"/_astro/Pic31.e2c6mDDO.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic34.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic31.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bathroomsimg35 = new Proxy({"src":"/_astro/Pic35.BtqzT_h_.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const bathroomsimg32 = new Proxy({"src":"/_astro/Pic32.BtqzT_h_.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic35.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/bathrooms/Pic32.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg1 = new Proxy({"src":"/_astro/Pic1.C38F4Tba.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const kitchensimg1 = new Proxy({"src":"/_astro/Pic1.C38F4Tba.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic1.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic1.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg2 = new Proxy({"src":"/_astro/Pic2.y1bHaRX9.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const kitchensimg2 = new Proxy({"src":"/_astro/Pic2.y1bHaRX9.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic2.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic2.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg3 = new Proxy({"src":"/_astro/Pic3.B_vB_XYS.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const kitchensimg3 = new Proxy({"src":"/_astro/Pic3.B_vB_XYS.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic3.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic3.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg4 = new Proxy({"src":"/_astro/Pic4.CJZfx5sX.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const kitchensimg4 = new Proxy({"src":"/_astro/Pic4.CJZfx5sX.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic4.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic4.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg5 = new Proxy({"src":"/_astro/Pic5.DzwqJYV5.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const kitchensimg5 = new Proxy({"src":"/_astro/Pic5.DzwqJYV5.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic5.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic5.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg6 = new Proxy({"src":"/_astro/Pic6.Dm5ulzwu.JPG","width":4032,"height":3024,"format":"jpg","orientation":1}, {
+const kitchensimg6 = new Proxy({"src":"/_astro/Pic6.Dm5ulzwu.jpg","width":4032,"height":3024,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic6.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic6.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg7 = new Proxy({"src":"/_astro/Pic7.C-FgmcLh.JPG","width":3264,"height":2448,"format":"jpg","orientation":1}, {
+const kitchensimg7 = new Proxy({"src":"/_astro/Pic7.C-FgmcLh.jpg","width":3264,"height":2448,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic7.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic7.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg8 = new Proxy({"src":"/_astro/Pic8.CRYz-WWA.JPG","width":3264,"height":2448,"format":"jpg","orientation":1}, {
+const kitchensimg8 = new Proxy({"src":"/_astro/Pic8.CRYz-WWA.jpg","width":3264,"height":2448,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic8.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic8.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg9 = new Proxy({"src":"/_astro/Pic9.C-EfbbLC.JPG","width":3264,"height":2448,"format":"jpg","orientation":1}, {
+const kitchensimg9 = new Proxy({"src":"/_astro/Pic9.C-EfbbLC.jpg","width":3264,"height":2448,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic9.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic9.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg10 = new Proxy({"src":"/_astro/Pic10.BKM9DCxS.JPG","width":3264,"height":2448,"format":"jpg","orientation":1}, {
+const kitchensimg10 = new Proxy({"src":"/_astro/Pic10.BKM9DCxS.jpg","width":3264,"height":2448,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic10.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic10.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg11 = new Proxy({"src":"/_astro/Pic11.D-0Yaw3P.JPG","width":3264,"height":2448,"format":"jpg","orientation":1}, {
+const kitchensimg11 = new Proxy({"src":"/_astro/Pic11.D-0Yaw3P.jpg","width":3264,"height":2448,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic11.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic11.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg12 = new Proxy({"src":"/_astro/Pic12.zv77YRkH.JPG","width":3264,"height":2448,"format":"jpg","orientation":1}, {
+const kitchensimg12 = new Proxy({"src":"/_astro/Pic12.zv77YRkH.jpg","width":3264,"height":2448,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic12.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic12.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg13 = new Proxy({"src":"/_astro/Pic13.Cej49KJ2.JPG","width":3264,"height":2448,"format":"jpg","orientation":1}, {
+const kitchensimg13 = new Proxy({"src":"/_astro/Pic13.Cej49KJ2.jpg","width":3264,"height":2448,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic13.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic13.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg14 = new Proxy({"src":"/_astro/Pic14.DAAZ_TVe.JPG","width":3264,"height":2448,"format":"jpg","orientation":1}, {
+const kitchensimg14 = new Proxy({"src":"/_astro/Pic14.DAAZ_TVe.jpg","width":3264,"height":2448,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic14.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic14.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg15 = new Proxy({"src":"/_astro/Pic15.DPC2EX3B.JPG","width":3264,"height":2448,"format":"jpg","orientation":1}, {
+const kitchensimg15 = new Proxy({"src":"/_astro/Pic15.DPC2EX3B.jpg","width":3264,"height":2448,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic15.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic15.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg16 = new Proxy({"src":"/_astro/Pic16.C9kOBjfc.JPG","width":4640,"height":3480,"format":"jpg","orientation":1}, {
+const kitchensimg16 = new Proxy({"src":"/_astro/Pic16.C9kOBjfc.jpg","width":4640,"height":3480,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic16.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic16.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg17 = new Proxy({"src":"/_astro/Pic17.CEqt2M11.JPG","width":4640,"height":3480,"format":"jpg","orientation":1}, {
+const kitchensimg17 = new Proxy({"src":"/_astro/Pic17.CEqt2M11.jpg","width":4640,"height":3480,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic17.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic17.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg18 = new Proxy({"src":"/_astro/Pic18.DkfpjzG7.JPG","width":4640,"height":3480,"format":"jpg","orientation":1}, {
+const kitchensimg18 = new Proxy({"src":"/_astro/Pic18.DkfpjzG7.jpg","width":4640,"height":3480,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic18.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic18.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg19 = new Proxy({"src":"/_astro/Pic19.CoexMKW7.JPG","width":4640,"height":3480,"format":"jpg","orientation":1}, {
+const kitchensimg19 = new Proxy({"src":"/_astro/Pic19.CoexMKW7.jpg","width":4640,"height":3480,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic19.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic19.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg20 = new Proxy({"src":"/_astro/Pic20.BU48dU2V.JPG","width":4640,"height":3480,"format":"jpg","orientation":1}, {
+const kitchensimg20 = new Proxy({"src":"/_astro/Pic20.BU48dU2V.jpg","width":4640,"height":3480,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic20.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic20.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg21 = new Proxy({"src":"/_astro/Pic21.CcAXs0Df.JPG","width":4640,"height":3480,"format":"jpg","orientation":1}, {
+const kitchensimg21 = new Proxy({"src":"/_astro/Pic21.CcAXs0Df.jpg","width":4640,"height":3480,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic21.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic21.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg22 = new Proxy({"src":"/_astro/Pic22.DJkmHg1E.JPG","width":4640,"height":3480,"format":"jpg","orientation":1}, {
+const kitchensimg22 = new Proxy({"src":"/_astro/Pic22.DJkmHg1E.jpg","width":4640,"height":3480,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic22.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic22.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const kitchensimg23 = new Proxy({"src":"/_astro/Pic23.C2XQa2SJ.JPG","width":4640,"height":3480,"format":"jpg","orientation":1}, {
+const kitchensimg23 = new Proxy({"src":"/_astro/Pic23.C2XQa2SJ.jpg","width":4640,"height":3480,"format":"jpg","orientation":1}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic23.JPG";
+								return "/Users/kyle/Documents/Repos/jaiscudderplumbing/src/assets/images/gallery/kitchens/Pic23.jpg";
 							}
 							
 							return target[name];
@@ -1056,10 +1056,12 @@ const galleries = [
       bathroomsimg8,
       bathroomsimg9,
       bathroomsimg10,
+      bathroomsimg11,
       bathroomsimg12,
       bathroomsimg13,
       bathroomsimg14,
       bathroomsimg15,
+      bathroomsimg16,
       bathroomsimg17,
       bathroomsimg18,
       bathroomsimg19,
@@ -1069,15 +1071,13 @@ const galleries = [
       bathroomsimg23,
       bathroomsimg24,
       bathroomsimg25,
+      bathroomsimg26,
       bathroomsimg27,
       bathroomsimg28,
       bathroomsimg29,
       bathroomsimg30,
       bathroomsimg31,
-      bathroomsimg32,
-      bathroomsimg33,
-      bathroomsimg34,
-      bathroomsimg35
+      bathroomsimg32
     ]
   },
   {
