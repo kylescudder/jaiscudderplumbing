@@ -15,7 +15,7 @@
   "dependencies": {
     "@astrojs/react": "4.1.6",
     "@astrojs/tailwind": "5.1.5",
-    "@astrojs/vercel": "8.0.1",
+    "@astrojs/vercel": "8.0.2",
     "@types/nodemailer": "6.4.17",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
