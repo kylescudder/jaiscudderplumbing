@@ -51,7 +51,7 @@ const Gallery = ({ galleries }: { galleries: GalleryItem[] }) => {
         </div>
 
         {selectedGallery && (
-          <div className="bg-opacity-90 fixed inset-0 z-50 flex items-center justify-center bg-black">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90">
             <button
               onClick={() => setSelectedGallery(null)}
               className="absolute top-4 right-4 z-50 p-4 text-white transition-colors hover:text-gray-300"
