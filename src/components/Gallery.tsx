@@ -35,8 +35,8 @@ const Gallery = ({ galleries }: { galleries: GalleryItem[] }) => {
                   className="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="absolute right-0 bottom-0 left-0 p-4 text-white">
                   <h3 className="mb-2 text-xl font-bold">{gallery.name}</h3>
                   <p className="text-sm">{gallery.description}</p>
                 </div>
@@ -46,10 +46,10 @@ const Gallery = ({ galleries }: { galleries: GalleryItem[] }) => {
         </div>
 
         {selectedGallery && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+          <div className="bg-opacity-90 fixed inset-0 z-50 flex items-center justify-center bg-black">
             <button
               onClick={() => setSelectedGallery(null)}
-              className="absolute right-4 top-4 z-50 p-4 text-white transition-colors hover:text-gray-300"
+              className="absolute top-4 right-4 z-50 p-4 text-white transition-colors hover:text-gray-300"
             >
               Close
             </button>
