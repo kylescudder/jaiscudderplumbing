@@ -21,7 +21,7 @@ export const testimonials: Testimonial[] = [
     name: "Lynn",
     location: "Seaford",
     quote:
-      " have always been very pleased with the work Jai has done for me which is why I always use him. When I have needed work done ASAP he has always done his best to fit me in which is much appreciated. His timekeeping is second to none and his attitude couldn't be better, very friendly & helpful. Nothing is too much trouble. I would not hesitate to recommend him to family friends.",
+      "I have always been very pleased with the work Jai has done for me which is why I always use him. When I have needed work done ASAP he has always done his best to fit me in which is much appreciated. His timekeeping is second to none and his attitude couldn't be better, very friendly & helpful. Nothing is too much trouble. I would not hesitate to recommend him to family & friends.",
   },
   {
     name: "Steve & Sava",
@@ -33,7 +33,7 @@ export const testimonials: Testimonial[] = [
     name: "Diane",
     location: "Seaford",
     quote:
-      "I have used Jai for all my plumbing work for over 3 years. He provides an excellent service and is always prompt and reliable. Jai will go beyond the call of duty should you have any unforeseen emergency and I feel I can rely on him if I have a problem. Jai is polite, friendly and trustworthy. His work is of a good standard and his prices are very reasonable. I would not hesitate to seek his help with any future problems and would recommend him to others.",
+      "I have used Jai for all my plumbing work for many years. He provides an excellent service and is always prompt and reliable. Jai will go beyond the call of duty should you have any unforeseen emergency and I feel I can rely on him if I have a problem. Jai is polite, friendly and trustworthy. His work is of a good standard and his prices are very reasonable. I would not hesitate to seek his help with any future problems and would recommend him to others.",
   },
   {
     name: "Janis",
