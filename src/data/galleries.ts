@@ -1,7 +1,7 @@
 import { type ImageMetadata } from "astro";
 
 export interface GalleryItem {
-  name: string,
+  name: string;
   images: ImageMetadata[];
 }
 
@@ -39,8 +39,6 @@ import bathroomsimg30 from "../assets/images/gallery/bathrooms/Pic30.jpg";
 import bathroomsimg31 from "../assets/images/gallery/bathrooms/Pic31.jpg";
 import bathroomsimg32 from "../assets/images/gallery/bathrooms/Pic32.jpg";
 
-
-
 import kitchensimg1 from "../assets/images/gallery/kitchens/Pic1.jpg";
 import kitchensimg2 from "../assets/images/gallery/kitchens/Pic2.jpg";
 import kitchensimg3 from "../assets/images/gallery/kitchens/Pic3.jpg";
@@ -64,8 +62,6 @@ import kitchensimg20 from "../assets/images/gallery/kitchens/Pic20.jpg";
 import kitchensimg21 from "../assets/images/gallery/kitchens/Pic21.jpg";
 import kitchensimg22 from "../assets/images/gallery/kitchens/Pic22.jpg";
 import kitchensimg23 from "../assets/images/gallery/kitchens/Pic23.jpg";
-
-
 
 export const galleries: GalleryItem[] = [
   {
@@ -102,7 +98,7 @@ export const galleries: GalleryItem[] = [
       bathroomsimg29,
       bathroomsimg30,
       bathroomsimg31,
-      bathroomsimg32
+      bathroomsimg32,
     ],
   },
   {
