@@ -1,11 +1,9 @@
-// @ts-check
 import { defineConfig } from "astro/config";
-
-import tailwind from "@astrojs/tailwind";
-
-import vercel from "@astrojs/vercel";
-
 import react from "@astrojs/react";
+
+import netlify from "@astrojs/netlify";
+
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,7 +11,13 @@ export default defineConfig({
     ? "https://jaiscudderplumbing.co.uk"
     : "http://localhost:4321",
 
-  integrations: [tailwind(), react()],
+  integrations: [react()],
   output: "server",
-  adapter: vercel(),
+
+  adapter: netlify({
+    edgeMiddleware: true,
+  }),
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
