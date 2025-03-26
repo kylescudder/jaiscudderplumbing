@@ -13,13 +13,13 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@astrojs/netlify": "6.2.3",
-    "@astrojs/react": "4.2.1",
+    "@astrojs/netlify": "6.2.4",
+    "@astrojs/react": "4.2.2",
     "@tailwindcss/vite": "4.0.15",
     "@types/nodemailer": "6.4.17",
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
-    "astro": "5.5.4",
+    "astro": "5.5.5",
     "dotenv": "16.4.7",
     "react": "19.0.0",
     "react-dom": "19.0.0",
