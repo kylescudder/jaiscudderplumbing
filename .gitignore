@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Netlify build artifacts
+.netlify/build/
+.netlify/v1/functions/
