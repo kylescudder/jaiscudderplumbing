@@ -2,7 +2,7 @@ FROM oven/bun:1.4.3@sha256:ec06c3b6cea04192ae6770c434f668ca41d343ad19fa6472216c7
 WORKDIR /app
 ENV CI=true HUSKY=0 BUN_CONFIG_MAX_HTTP_REQUESTS=16
 COPY package.json bun.lock ./
-RUN bun install --frozen-lockfile
+RUN bun install --frozen-lockfile --network-concurrency=16
 COPY astro.config.mjs tsconfig.json ./
 COPY src ./src
 COPY public ./public
