@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ImageGallery from "react-image-gallery";
 import type { GalleryItem } from "../data/galleries";
-import "react-image-gallery/styles/css/image-gallery.css";
+import "react-image-gallery/styles/image-gallery.css";
 
 const Gallery = ({ galleries }: { galleries: GalleryItem[] }) => {
   const [selectedGallery, setSelectedGallery] = useState<GalleryItem | null>(

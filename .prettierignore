@@ -3,3 +3,10 @@ node_modules/
 .netlify/
 .astro/
 pnpm-lock.yaml
+
+state/
+secrets/
+backups/
+deploy-spool/
+.env*
+bun.lock
