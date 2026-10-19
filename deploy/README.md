@@ -2,7 +2,7 @@
 
 Production: https://jaiscudderplumbing.co.uk and https://www.jaiscudderplumbing.co.uk.
 Preview alias: https://jaiscudderplumbing.kylescudder.co.uk.
-Repository: `kylescudder/jaiscudderplumbing`, branch `master`.
+Repository: `kylescudder/jaiscudderplumbing`, branch `main`.
 Herman checkout: `/Users/kyle/platform/apps/jaiscudderplumbing`.
 
 ## Automatic releases
@@ -10,7 +10,7 @@ Herman checkout: `/Users/kyle/platform/apps/jaiscudderplumbing`.
 Pull requests run `.github/workflows/ci.yml`: frozen-lockfile build, static page
 and asset validation, formatting, deployment provenance/queue/rollback tests,
 webhook authentication tests and an unprivileged production-container check.
-Every `master` push runs `release.yml`, builds native AMD64 and ARM64 images,
+Every `main` push runs `release.yml`, builds native AMD64 and ARM64 images,
 publishes an immutable GHCR digest with GitHub provenance, and requests deployment.
 
 The static Astro site runs in an unprivileged Caddy container at
@@ -28,7 +28,7 @@ can write only its own queue. It reads only the public acceptance metadata.
 
 LaunchAgent `com.herman.jaiscudderplumbing-deploy` consumes the queue as Colima's
 owner. Before pulling or starting an image, it independently verifies provenance
-from this repo's `release.yml`, `refs/heads/master` and GitHub-hosted runners. The
+from this repo's `release.yml`, `refs/heads/main` and GitHub-hosted runners. The
 registry credential is removed from the queue and omitted from deployment logs
 and state; its temporary Docker config is deleted even on failure.
 
@@ -40,7 +40,7 @@ acknowledge its own deployment.
 
 ## Configuration and operation
 
-GitHub's `production` environment allows `master` only and stores the dedicated
+GitHub's `production` environment allows `main` only and stores the dedicated
 `CF_ACCESS_CLIENT_ID`, `CF_ACCESS_CLIENT_SECRET`, `DEPLOY_WEBHOOK_SECRET` secrets.
 Repository variables are `DEPLOY_ENABLED=true` and
 `SITE_BASE_URL=https://jaiscudderplumbing.co.uk`.
@@ -57,11 +57,11 @@ docker compose -f deploy/compose.deploy-hook.yaml --env-file .env.deploy-hook up
 python3 -B deploy/install-launchd.py
 launchctl print gui/501/com.herman.jaiscudderplumbing-deploy
 tail -n 100 state/deploy.log
-# Deploy or roll back to a previously attested master image.
+# Deploy or roll back to a previously attested main image.
 ./deploy/herman-deploy.sh sha256:<verified-digest>
 ```
 
-Routine updates are reviewed merges to `master`; they deploy without a host
+Routine updates are reviewed merges to `main`; they deploy without a host
 checkout update. Host deployment scripts/Compose changes require an explicit
 checkout update separately. Pause automatic deployment with
 `gh variable set DEPLOY_ENABLED --body false --repo kylescudder/jaiscudderplumbing`.

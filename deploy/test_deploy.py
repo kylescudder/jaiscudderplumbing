@@ -147,11 +147,11 @@ class Deploy(unittest.TestCase):
                     raise RuntimeError('fixture failure')
             self.assertFalse(folder.exists())
 
-    def test_provenance_is_restricted_to_master_and_this_workflow(self):
+    def test_provenance_is_restricted_to_main_and_this_workflow(self):
         with patch.object(module,'run',self.fake_run), patch.object(module,'compose',self.fake_compose), patch.object(module,'start'):
             module.deploy(D,R)
         args = next(call for call in self.calls if call[0]=='gh')
-        self.assertEqual(args[args.index('--source-ref')+1], 'refs/heads/master')
+        self.assertEqual(args[args.index('--source-ref')+1], 'refs/heads/main')
         self.assertEqual(args[args.index('--signer-workflow')+1], module.REPO+'/.github/workflows/release.yml')
         self.assertIn('--deny-self-hosted-runners', args)
 
