@@ -1,5 +1,20 @@
 # Jai Scudder Plumbing on the host
 
+## Shared deployment service
+
+This app is registered as `jaiscudderplumbing` in the central deployment registry
+`/Users/kyle/platform/deploy-core/apps.json`. LaunchAgent
+`com.kylescudder.deploy-core` runs the single installed engine. Application hooks
+are `deploy/hooks.py`; the receiver, credentials, queues,
+state and database contracts below remain app-specific. Manual deployment uses
+`./deploy/host-deploy.sh sha256:<digest>`.
+
+Engine updates, application registration, failure inspection and service rollback
+are documented in [deploy-core](https://github.com/kylescudder/deploy-core).
+There are no vendored engine files, lock files or sync PRs. Do not install an
+app-specific LaunchAgent. Apply future engine changes once through the central service.
+
+
 Production: https://jaiscudderplumbing.co.uk and https://www.jaiscudderplumbing.co.uk.
 Preview alias: https://jaiscudderplumbing.kylescudder.co.uk.
 Repository: `kylescudder/jaiscudderplumbing`, branch `main`.
@@ -7,10 +22,7 @@ The host checkout: `/Users/kyle/platform/apps/jaiscudderplumbing`.
 
 ## Deployer
 
-`deploy/host-deploy.py` holds this app's settings and hooks; the
-shared flow is `deploy/deploy_core.py`, vendored unchanged from
-`kylescudder/deploy-core` (see `deploy/deploy_core.lock`). Change the core
-there and sync it; CI fails if the vendored copy is edited here.
+`application hooks` holds this app's settings and hooks; the
 
 ## Automatic releases
 
@@ -33,7 +45,7 @@ contain an immutable digest, commit and short-lived read-only GitHub registry
 credential. The receiver has no Docker socket, database access or host port and
 can write only its own queue. It reads only the public acceptance metadata.
 
-LaunchAgent `com.kylescudder.jaiscudderplumbing-deploy` consumes the queue as Colima's
+LaunchAgent `com.kylescudder.deploy-core` consumes the queue as Colima's
 owner. Before pulling or starting an image, it independently verifies provenance
 from this repo's `release.yml`, `refs/heads/main` and GitHub-hosted runners. The
 registry credential is removed from the queue and omitted from deployment logs
@@ -61,8 +73,7 @@ tooling and release records. Source and images are rebuilt from GitHub.
 ```sh
 # Run from the checkout on the host.
 docker compose -f deploy/compose.deploy-hook.yaml --env-file .env.deploy-hook up -d --wait
-python3 -B deploy/host-deploy.py --install <host LocalHostName>
-launchctl print gui/501/com.kylescudder.jaiscudderplumbing-deploy
+launchctl print gui/501/com.kylescudder.deploy-core
 tail -n 100 state/deploy.log
 # Deploy or roll back to a previously attested main image.
 ./deploy/host-deploy.sh sha256:<verified-digest>
