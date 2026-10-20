@@ -22,7 +22,7 @@ The host checkout: `/Users/kyle/platform/apps/jaiscudderplumbing`.
 
 ## Deployer
 
-`application hooks` holds this app's settings and hooks; the
+Application-specific behavior is in `hooks.py`; deployment definitions are central.
 
 ## Automatic releases
 
