@@ -11,21 +11,20 @@ import { testimonials } from "../data/testimonials";
         </h2>
       </div>
     </div>
+    {/* prettier-ignore */}
     <h3 class="mb-12 text-center">
       If you would like to leave your own testimonial please send them to
       <a href="mailto:mail@jaiscudderplumbing.co.uk"
         >mail@jaiscudderplumbing.co.uk</a
       >. All testimonials are appreciated. Thank you!
     </h3>
-    {
-      testimonials.map((testimonial) => (
-        <div class="group relative overflow-hidden py-4">
-          <p class="text-left">{testimonial.quote}</p>
-          <p class="pt-4 pb-8 text-right font-bold">
-            {testimonial.name}, {testimonial.location}
-          </p>
-        </div>
-      ))
-    }
+    {testimonials.map((testimonial) => (
+      <div class="group relative overflow-hidden py-4">
+        <p class="text-left">{testimonial.quote}</p>
+        <p class="pt-4 pb-8 text-right font-bold">
+          {testimonial.name}, {testimonial.location}
+        </p>
+      </div>
+    ))}
   </div>
 </section>
