@@ -1,27 +1,27 @@
 ---
-import Footer from "../components/Footer.astro";
-import Navigation from "../components/Navigation.astro";
-import HeadSEO from "../components/HeadSEO.astro";
+import Footer from '../components/Footer.astro'
+import Navigation from '../components/Navigation.astro'
+import HeadSEO from '../components/HeadSEO.astro'
 
 interface Props {
-  title?: string | undefined;
-  description?: string | undefined;
-  ogImage?: URL | undefined;
+  title?: string | undefined
+  description?: string | undefined
+  ogImage?: URL | undefined
 }
 
 const {
-  title = "Jai Scudder - Plumbing and Property Maintenance",
-  description = "A local plumber that places an emphasis on quality and reputation",
-  ogImage = new URL("headerLogo.svg", Astro.url),
-} = Astro.props;
+  title = 'Jai Scudder - Plumbing and Property Maintenance',
+  description = 'A local plumber that places an emphasis on quality and reputation',
+  ogImage = new URL('headerLogo.svg', Astro.url)
+} = Astro.props
 ---
 
 <!doctype html>
-<html lang="en" class="h-full w-full">
+<html lang='en' class='h-full w-full'>
   <head>
     <HeadSEO title={title} description={description} ogImage={ogImage} />
   </head>
-  <body class="h-full min-h-screen w-full bg-white text-black">
+  <body class='h-full min-h-screen w-full bg-white text-black'>
     <Navigation />
     <main>
       <slot />
