@@ -13,8 +13,10 @@
     }
     handle {
         root * /srv
-        header Cache-Control no-cache
-        header /_astro/* Cache-Control "public, max-age=31536000, immutable"
+        @fingerprinted path /_astro/*
+        @unfingerprinted not path /_astro/*
+        header @fingerprinted Cache-Control "public, max-age=31536000, immutable"
+        header @unfingerprinted Cache-Control no-cache
         try_files {path} {path}/index.html =404
         file_server
     }
