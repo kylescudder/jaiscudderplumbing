@@ -7,10 +7,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
+    "typecheck": "astro check",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky",
+    "astro": "astro",
     "check:site": "bun deploy/check-site.mjs"
   },
   "dependencies": {
@@ -25,9 +26,11 @@
     "tailwindcss": "4.3.0"
   },
   "devDependencies": {
+    "@astrojs/check": "0.9.12",
     "husky": "9.1.7",
     "prettier": "3.8.3",
     "prettier-plugin-astro": "1.1.1",
-    "prettier-plugin-tailwindcss": "0.8.0"
+    "prettier-plugin-tailwindcss": "0.8.0",
+    "typescript": "5.9.3"
   }
 }

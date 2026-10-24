@@ -92,8 +92,8 @@ const navItems = [
       anchor.addEventListener("click", function (e) {
         e.preventDefault();
 
-        const targetId = this.getAttribute("href");
-        const targetElement = document.querySelector(targetId);
+        const targetId = anchor.getAttribute("href");
+        const targetElement = targetId && document.querySelector(targetId);
 
         if (targetElement) {
           targetElement.scrollIntoView({
