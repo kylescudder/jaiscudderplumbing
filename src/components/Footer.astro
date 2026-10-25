@@ -19,26 +19,24 @@ const businessHours = [
       <div class="space-y-4">
         <h3 class="text-xl font-bold text-white">Contact Us</h3>
         <div class="space-y-2">
-          {
-            contactPoints.map((contact: ContactPoint) => {
-              const Icon = contact.icon;
-              return (
-                <p class="flex items-center">
-                  {Icon && <Icon className="h-5 w-5 mr-2" />}
-                  <a
-                    href={
-                      contact.type === "Email"
-                        ? `mailto:${contact.details}`
-                        : `tel:${contact.details.replace(/\s/g, "")}`
-                    }
-                    class="transition-colors hover:text-gray-300"
-                  >
-                    {contact.details}
-                  </a>
-                </p>
-              );
-            })
-          }
+          {contactPoints.map((contact: ContactPoint) => {
+            const Icon = contact.icon;
+            return (
+              <p class="flex items-center">
+                {Icon && <Icon className="h-5 w-5 mr-2" />}
+                <a
+                  href={
+                    contact.type === "Email"
+                      ? `mailto:${contact.details}`
+                      : `tel:${contact.details.replace(/\s/g, "")}`
+                  }
+                  class="transition-colors hover:text-gray-300"
+                >
+                  {contact.details}
+                </a>
+              </p>
+            );
+          })}
         </div>
       </div>
 
@@ -46,7 +44,9 @@ const businessHours = [
       <div>
         <h3 class="mb-4 text-xl font-bold text-white">Our Services</h3>
         <ul class="space-y-2">
-          {services.map((service) => <li>{service.title}</li>)}
+          {services.map((service) => (
+            <li>{service.title}</li>
+          ))}
         </ul>
       </div>
 
@@ -84,8 +84,9 @@ const businessHours = [
     <!-- Bottom Bar -->
     <div class="mt-8 border-t border-white pt-8">
       <div class="flex flex-col items-center justify-between md:flex-row">
+        {/* prettier-ignore */}
         <p class="text-sm">
-          &copy; {currentYear}
+          &copy; {currentYear}{" "}
           {businessName}. All rights reserved.
         </p>
         <div class="mt-4 md:mt-0">

@@ -14,28 +14,26 @@ import { type ContactPoint, contactPoints } from "../data/contact-points.tsx";
     </div>
     {/* Center the contact points with flex */}
     <div class="flex flex-col items-center justify-center">
-      {
-        contactPoints.map((contact: ContactPoint) => {
-          const Icon = contact.icon;
-          return (
-            <div class="mb-8 flex items-center justify-center">
-              <h3 class="flex items-center">
-                {Icon && <Icon className="h-5 w-5 mr-2" />}
-                <a
-                  href={
-                    contact.type === "Email"
-                      ? `mailto:${contact.details}`
-                      : `tel:${contact.details.replace(/\s/g, "")}`
-                  }
-                  class="transition-colors hover:text-red-300"
-                >
-                  {contact.details}
-                </a>
-              </h3>
-            </div>
-          );
-        })
-      }
+      {contactPoints.map((contact: ContactPoint) => {
+        const Icon = contact.icon;
+        return (
+          <div class="mb-8 flex items-center justify-center">
+            <h3 class="flex items-center">
+              {Icon && <Icon className="h-5 w-5 mr-2" />}
+              <a
+                href={
+                  contact.type === "Email"
+                    ? `mailto:${contact.details}`
+                    : `tel:${contact.details.replace(/\s/g, "")}`
+                }
+                class="transition-colors hover:text-red-300"
+              >
+                {contact.details}
+              </a>
+            </h3>
+          </div>
+        );
+      })}
     </div>
   </div>
 </div>

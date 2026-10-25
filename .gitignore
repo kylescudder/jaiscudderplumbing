@@ -23,7 +23,7 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# Herman host state and credentials
+# Host state and credentials
 .env*
 !.env.example
 state/

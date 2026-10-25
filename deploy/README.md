@@ -1,16 +1,34 @@
-# Jai Scudder Plumbing on Herman
+# Jai Scudder Plumbing on the host
+
+## Shared deployment service
+
+This app is registered as `jaiscudderplumbing` in the central deployment registry
+`/Users/kyle/platform/deploy-core/apps.json`. LaunchAgent
+`com.kylescudder.deploy-core` runs the single installed engine. Application hooks
+are `deploy/hooks.py`; the receiver, credentials, queues,
+state and database contracts below remain app-specific. Manual deployment uses
+`./deploy/host-deploy.sh sha256:<digest>`.
+
+Engine updates, application registration, failure inspection and service rollback
+are documented in [deploy-core](https://github.com/kylescudder/deploy-core).
+There are no vendored engine files, lock files or sync PRs. Do not install an
+app-specific LaunchAgent. Apply future engine changes once through the central service.
 
 Production: https://jaiscudderplumbing.co.uk and https://www.jaiscudderplumbing.co.uk.
 Preview alias: https://jaiscudderplumbing.kylescudder.co.uk.
-Repository: `kylescudder/jaiscudderplumbing`, branch `master`.
-Herman checkout: `/Users/kyle/platform/apps/jaiscudderplumbing`.
+Repository: `kylescudder/jaiscudderplumbing`, branch `main`.
+The host checkout: `/Users/kyle/platform/apps/jaiscudderplumbing`.
+
+## Deployer
+
+Application-specific behavior is in `hooks.py`; deployment definitions are central.
 
 ## Automatic releases
 
 Pull requests run `.github/workflows/ci.yml`: frozen-lockfile build, static page
 and asset validation, formatting, deployment provenance/queue/rollback tests,
 webhook authentication tests and an unprivileged production-container check.
-Every `master` push runs `release.yml`, builds native AMD64 and ARM64 images,
+Every `main` push runs `release.yml`, builds native AMD64 and ARM64 images,
 publishes an immutable GHCR digest with GitHub provenance, and requests deployment.
 
 The static Astro site runs in an unprivileged Caddy container at
@@ -26,13 +44,13 @@ contain an immutable digest, commit and short-lived read-only GitHub registry
 credential. The receiver has no Docker socket, database access or host port and
 can write only its own queue. It reads only the public acceptance metadata.
 
-LaunchAgent `com.herman.jaiscudderplumbing-deploy` consumes the queue as Colima's
+LaunchAgent `com.kylescudder.deploy-core` consumes the queue as Colima's
 owner. Before pulling or starting an image, it independently verifies provenance
-from this repo's `release.yml`, `refs/heads/master` and GitHub-hosted runners. The
+from this repo's `release.yml`, `refs/heads/main` and GitHub-hosted runners. The
 registry credential is removed from the queue and omitted from deployment logs
 and state; its temporary Docker config is deleted even on failure.
 
-Herman checks startup, the expected page, CSS, JavaScript and image assets before
+The host checks startup, the expected page, CSS, JavaScript and image assets before
 publishing acceptance metadata matching both digest and revision. Failed checks
 restore and verify the previous image. GitHub waits for completed host acceptance
 and the public revision before reporting success. A failed candidate cannot
@@ -40,7 +58,7 @@ acknowledge its own deployment.
 
 ## Configuration and operation
 
-GitHub's `production` environment allows `master` only and stores the dedicated
+GitHub's `production` environment allows `main` only and stores the dedicated
 `CF_ACCESS_CLIENT_ID`, `CF_ACCESS_CLIENT_SECRET`, `DEPLOY_WEBHOOK_SECRET` secrets.
 Repository variables are `DEPLOY_ENABLED=true` and
 `SITE_BASE_URL=https://jaiscudderplumbing.co.uk`.
@@ -52,20 +70,19 @@ The shared encrypted NAS backup includes host configuration, credentials, deploy
 tooling and release records. Source and images are rebuilt from GitHub.
 
 ```sh
-# Run from the checkout on Herman.
+# Run from the checkout on the host.
 docker compose -f deploy/compose.deploy-hook.yaml --env-file .env.deploy-hook up -d --wait
-python3 -B deploy/install-launchd.py
-launchctl print gui/501/com.herman.jaiscudderplumbing-deploy
+launchctl print gui/501/com.kylescudder.deploy-core
 tail -n 100 state/deploy.log
-# Deploy or roll back to a previously attested master image.
-./deploy/herman-deploy.sh sha256:<verified-digest>
+# Deploy or roll back to a previously attested main image.
+./deploy/host-deploy.sh sha256:<verified-digest>
 ```
 
-Routine updates are reviewed merges to `master`; they deploy without a host
+Routine updates are reviewed merges to `main`; they deploy without a host
 checkout update. Host deployment scripts/Compose changes require an explicit
 checkout update separately. Pause automatic deployment with
 `gh variable set DEPLOY_ENABLED --body false --repo kylescudder/jaiscudderplumbing`.
-Kyle's login session and Colima must be running, as for the other Herman sites.
+Kyle's login session and Colima must be running, as for the other sites on the host.
 
 The original static releases under
 `/Users/kyle/platform/sites/jaiscudderplumbing/releases/` remain an emergency
