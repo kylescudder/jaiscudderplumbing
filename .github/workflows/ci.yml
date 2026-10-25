@@ -27,6 +27,7 @@ jobs:
           trap 'PLUMBING_IMAGE=jaiscudderplumbing:ci docker compose down; docker network rm platform-web' EXIT
           PLUMBING_IMAGE=jaiscudderplumbing:ci docker compose up -d --wait --wait-timeout 60
           docker exec jaiscudderplumbing-jaiscudderplumbing-1 wget -qO- http://127.0.0.1:8080/ | grep -q 'JAI SCUDDER LTD'
+          docker exec jaiscudderplumbing-jaiscudderplumbing-1 wget -qO- http://127.0.0.1:8080/healthz | grep -q "\"revision\":\"$GITHUB_SHA\""
           headers=$(docker exec jaiscudderplumbing-jaiscudderplumbing-1 wget -S -O /dev/null http://127.0.0.1:8080/ 2>&1)
           echo "$headers" | grep -qi "X-Jaiscudderplumbing-Revision: $GITHUB_SHA"
           status=$(docker exec jaiscudderplumbing-jaiscudderplumbing-1 wget -S -O /dev/null http://127.0.0.1:8080/missing-page 2>&1 || true)
