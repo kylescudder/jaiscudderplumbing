@@ -1,12 +1,12 @@
 ---
-import { testimonials } from "../data/testimonials";
+import { testimonials } from '../data/testimonials'
 ---
 
-<section class="py-16" id="testimonials">
-  <div class="container mx-auto">
-    <div class="mb-12 rounded-lg bg-red-700">
-      <div class="container mx-auto px-4">
-        <h2 class="py-6 text-center text-4xl font-bold text-white">
+<section class='py-16' id='testimonials'>
+  <div class='container mx-auto'>
+    <div class='mb-12 rounded-lg bg-red-700'>
+      <div class='container mx-auto px-4'>
+        <h2 class='py-6 text-center text-4xl font-bold text-white'>
           Testimonials
         </h2>
       </div>
@@ -19,9 +19,9 @@ import { testimonials } from "../data/testimonials";
       >. All testimonials are appreciated. Thank you!
     </h3>
     {testimonials.map((testimonial) => (
-      <div class="group relative overflow-hidden py-4">
-        <p class="text-left">{testimonial.quote}</p>
-        <p class="pt-4 pb-8 text-right font-bold">
+      <div class='group relative overflow-hidden py-4'>
+        <p class='text-left'>{testimonial.quote}</p>
+        <p class='pt-4 pb-8 text-right font-bold'>
           {testimonial.name}, {testimonial.location}
         </p>
       </div>

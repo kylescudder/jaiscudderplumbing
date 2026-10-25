@@ -1,38 +1,38 @@
 ---
-import { type ContactPoint, contactPoints } from "../data/contact-points.tsx";
+import { type ContactPoint, contactPoints } from '../data/contact-points.tsx'
 ---
 
-<div class="container mx-auto" id="contact">
-  <div class="mb-12 rounded-lg bg-red-700">
-    <div class="container mx-auto px-4">
-      <h2 class="py-6 text-center text-4xl font-bold text-white">Contact Us</h2>
+<div class='container mx-auto' id='contact'>
+  <div class='mb-12 rounded-lg bg-red-700'>
+    <div class='container mx-auto px-4'>
+      <h2 class='py-6 text-center text-4xl font-bold text-white'>Contact Us</h2>
     </div>
   </div>
-  <div class="mt-12">
-    <div class="mb-8 text-center">
-      <h2 class="font-light">Please contact Jai Scudder on:</h2>
+  <div class='mt-12'>
+    <div class='mb-8 text-center'>
+      <h2 class='font-light'>Please contact Jai Scudder on:</h2>
     </div>
     {/* Center the contact points with flex */}
-    <div class="flex flex-col items-center justify-center">
+    <div class='flex flex-col items-center justify-center'>
       {contactPoints.map((contact: ContactPoint) => {
-        const Icon = contact.icon;
+        const Icon = contact.icon
         return (
-          <div class="mb-8 flex items-center justify-center">
-            <h3 class="flex items-center">
-              {Icon && <Icon className="h-5 w-5 mr-2" />}
+          <div class='mb-8 flex items-center justify-center'>
+            <h3 class='flex items-center'>
+              {Icon && <Icon className='h-5 w-5 mr-2' />}
               <a
                 href={
-                  contact.type === "Email"
+                  contact.type === 'Email'
                     ? `mailto:${contact.details}`
-                    : `tel:${contact.details.replace(/\s/g, "")}`
+                    : `tel:${contact.details.replace(/\s/g, '')}`
                 }
-                class="transition-colors hover:text-red-300"
+                class='transition-colors hover:text-red-300'
               >
                 {contact.details}
               </a>
             </h3>
           </div>
-        );
+        )
       })}
     </div>
   </div>

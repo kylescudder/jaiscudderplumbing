@@ -7,7 +7,7 @@ COPY astro.config.mjs tsconfig.json ./
 COPY src ./src
 COPY public ./public
 COPY deploy/check-site.mjs ./deploy/check-site.mjs
-RUN bun run build && bun run check:site
+RUN bun run typecheck && bun run build && bun run check:site
 
 FROM caddy:2.11.7@sha256:8dc9fa87b36b25303d1c67d2a09f5824b7f3bfd72cb052f246e5da2133fe29a8
 RUN setcap -r /usr/bin/caddy
