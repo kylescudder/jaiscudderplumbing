@@ -9,7 +9,7 @@ COPY public ./public
 COPY deploy/check-site.mjs ./deploy/check-site.mjs
 RUN bun run typecheck && bun run build && bun run check:site
 
-FROM caddy:2.11.7@sha256:504a44d7d74bd2bc28a66afc4774912fc21223ca8a67734af1c54ab2f999b489
+FROM caddy:2.11.7@sha256:5e5286cb37d44086d651a5363f05f43a692ce4d649d88fb1bd844579f45fa9e8
 RUN setcap -r /usr/bin/caddy
 COPY --from=build /app/dist /srv
 COPY Caddyfile /etc/caddy/Caddyfile
