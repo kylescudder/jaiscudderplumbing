@@ -16,6 +16,8 @@ test('contact details link to the business email', async ({ page }) => {
   await page.goto('/')
 
   const emailLink = page.locator(`#contact a[href="mailto:${businessEmail}"]`)
+  // Bring the contact block into view so the test's final state shows it.
+  await emailLink.scrollIntoViewIfNeeded()
   await expect(emailLink).toBeVisible()
   await expect(emailLink).toHaveText(businessEmail)
 })
