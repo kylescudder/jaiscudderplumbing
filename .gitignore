@@ -34,3 +34,7 @@ deployment.json
 .netlify/
 __pycache__/
 *.pyc
+
+playwright-report/
+test-results/
+artifacts/e2e-ci/
